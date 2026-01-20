@@ -12,7 +12,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
    pciutils
 
 #create global virtual environment using python standard library tools of virtualenv
-ARG USER="codespace"
+ARG USER="vscode"
 ARG VENV_PATH="/home/${USER}/venv"
 COPY requirements.txt /tmp/
 COPY Makefile /tmp/
